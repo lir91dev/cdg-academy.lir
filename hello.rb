@@ -7,3 +7,4 @@ puts "Test Vim Redactor"
 puts "Hello CDG Teachers"
 
 puts 'What a beautiful day !'
+
