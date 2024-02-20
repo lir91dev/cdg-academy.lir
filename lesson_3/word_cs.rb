@@ -1,7 +1,7 @@
 
 word = gets.chomp.downcase 
 
-if word.slice(-1) == "s" && word.slice(-2) == "c"
+if word.end_with?("cs")
   num = word.length
   puts (2 ** num)
 else

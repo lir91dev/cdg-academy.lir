@@ -1,5 +1,5 @@
 
-# метод запроса данных покемонов
+# методы запроса данных покемонов
 def name
   puts "Ввидите имя покемона"
   name = gets.chomp
@@ -10,24 +10,20 @@ def color
   color = gets.chomp 
 end
 
-# создание пустого массива 
-arr = []
-# создание пустого хэша 
-hash = {}
-
-# приветствие и запрос колличества покемонов 
-puts "Привет ! сколько покемонов будем создавать ?"
-quantity = gets.chomp.to_i
-quantity.times do 
-  hash.merge!({name => color})
+# метод создания покемонов 
+def pok
+  h = Hash.new
+  puts "Привет ! сколько покемонов будем создавать ?"
+  quantity = gets.chomp.to_i
+    quantity.times do 
+      h.merge!({name => color})
+  end
+  a = Array.new
+  a.push(h)
+  puts a.inspect
 end
 
-arr.push(hash)
-
-# вывод массива на экран
-puts arr.inspect
-
-
+pok
 
 
 
